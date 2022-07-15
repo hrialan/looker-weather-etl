@@ -1,4 +1,4 @@
-view: history_sync {
+view: weather_history {
   sql_table_name: `weather_data.history_sync`
     ;;
 
