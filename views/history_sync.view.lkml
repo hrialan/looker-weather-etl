@@ -68,20 +68,6 @@ view: weather_history {
     sql: ${TABLE}.humidity ;;
   }
 
-  dimension_group: last_updated {
-    type: time
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    sql: ${TABLE}.last_updated ;;
-  }
-
   dimension: latitude {
     type: number
     sql: ${TABLE}.latitude ;;
