@@ -147,6 +147,16 @@ view: weather_history {
     sql: ${TABLE}.wind_mph ;;
   }
 
+  dimension: wind_knots {
+    type: number
+    sql: ${wind_mph} / 1.151;;
+  }
+
+  dimension: gust_knots {
+    type: number
+    sql: ${gust_mph} / 1.151;;
+  }
+
   measure: count {
     type: count
     drill_fields: []
