@@ -10,4 +10,8 @@ datagroup: sandbox_hrialan_weather_etl_default_datagroup {
 
 persist_with: sandbox_hrialan_weather_etl_default_datagroup
 
-explore: history_sync {}
+explore: history_sync {
+  always_filter: {
+    filters: [city: "Saint-Malo"]
+  }
+}
